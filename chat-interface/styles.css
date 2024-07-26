@@ -1,0 +1,204 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, serif, Georgia;
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+html,
+body,
+aside,
+main {
+    height: 100%;
+    font: 1rem;
+}
+
+/* aside */
+aside {
+    position: fixed;
+    overflow: auto;
+    background-color: lightgrey;
+    width: 30rem;
+    padding: 10px;
+}
+
+ul {
+    line-height: 8rem;
+}
+
+li {
+    display: block;
+    border-bottom: 1px solid gray;
+}
+
+li>div {
+    margin-right: 8px;
+}
+
+li:nth-last-child(1) {
+    border-bottom: none;
+    line-height: 0rem;
+    margin-top: 1rem;
+}
+
+.img-container {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-desc {
+    width: calc(100% - 12.4rem);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-desc p,
+.user-desc h2 {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.badge {
+    width: 3.4rem;
+    height: 3.4rem;
+    text-align: center;
+    line-height: 3.4rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    vertical-align: middle;
+}
+
+/* main */
+main {
+    width: calc(100% - 30rem);
+    margin-left: auto;
+}
+
+
+/* header */
+header {
+    height: 8rem;
+    background-color: lightgrey;
+    padding: 1rem;
+}
+
+.head-container {
+    display: block;
+}
+
+.head-user {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 3rem);
+}
+
+.head-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2rem;
+}
+
+
+/* chat area */
+.chat-area {
+    height: calc(100% - 16rem);
+    overflow: auto;
+    background-image: url(./images/background.jpg);
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.chat-container {
+    display: block;
+}
+
+.date-container {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    top: 0;
+    position: sticky;
+}
+
+.date-container span {
+    background-color: lightgrey;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.msg {
+    padding: 1rem;
+    min-width: 20rem;
+    max-width: 70rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    display: block;
+}
+
+.odd {
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+
+.even {
+    margin-left: auto;
+    background-color: azure;
+}
+
+.msg span{
+    display: block;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+
+/* footer */
+footer {
+    height: 8rem;
+    bottom: 0;
+    display: block;
+    padding: 2rem;
+    background-color: lightgrey;
+}
+
+footer input,
+footer button {
+    border-radius: 2rem;
+    height: 4rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer input {
+    width: calc(100% - 8.5rem);
+    padding: 0.5rem;
+}
+
+footer button {
+    width: 8rem;
+    height: 3rem;
+}

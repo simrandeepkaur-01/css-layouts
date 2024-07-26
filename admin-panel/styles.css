@@ -1,0 +1,297 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+html,
+body,
+aside,
+main {
+    height: 100%;
+    /* background-color: red; */
+    font-size: 1rem;
+    font-family: sans-serif, serif;
+}
+
+/* aside */
+aside {
+    width: 20rem;
+    position: fixed;
+    /* padding: 1rem; */
+}
+
+aside>.aside-header,
+.aside-main ul,
+.aside-footer {
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.aside-header {
+    height: 4rem;
+    font-family: cursive;
+    font-size: 2.5rem;
+}
+
+.aside-header>a {
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+    margin-left: 1rem;
+}
+
+.aside-main {
+    height: calc(100% - 7rem);
+    padding-top: 1rem;
+}
+
+.aside-main>ul>li:first-child {
+    padding-left: 1rem;
+}
+
+.aside-main ul {
+    line-height: 2.7rem;
+}
+
+.aside-main ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.aside-main ul li a svg {
+    margin-right: 0.5rem;
+}
+
+.orders a {
+    display: flex;
+    align-items: center;
+}
+
+.orders a>span {
+    margin-left: 0.3rem;
+}
+
+.orders .badge {
+    height: 1.9rem;
+    width: 1.9rem;
+    margin-left: auto;
+    border-radius: 5px;
+    line-height: 1.9rem;
+    text-align: center;
+    background-color: bisque;
+    margin-right: 1.5rem;
+}
+
+.orders .badge span {
+    color: red;
+}
+
+.aside-footer {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    padding-left: 2rem;
+    /* background-color: pink; */
+}
+
+.aside-listing-child>li>a {
+    display: flex;
+    align-items: center;
+}
+.aside-footer svg {
+    margin-right: 0.5rem;
+}
+
+/* main */
+.main-section {
+    height: 100%;
+    width: calc(100% - 20rem);
+    margin-left: auto;
+    background-color: rgb(238, 238, 238);
+
+}
+
+.main-header {
+    height: 3rem;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: grey;
+
+}
+
+.main-header >a {
+    background-color: rgb(255, 217, 0);
+    width: 2rem;
+    height: 2rem;
+    line-height: 2.7rem;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align: middle;
+    /* align-items: center; */
+    align-content: center;
+}
+
+
+.main-main {
+    height: calc(100% - 7.1rem);
+    padding: 2rem 2rem 0;
+    overflow: hidden;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.search, input[type="button"]{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.btn-archived,.btn-add-team-member{
+    border: 1px solid #2482ed;
+    background-color:  #2482ed;
+    color: white;
+    font-size: 1rem;
+}
+.btn-archived{
+    margin-right: 0.5rem;
+}
+.search{
+    width: 25rem;
+    font-size: 1rem;
+    border: 1px solid lightgrey;
+    padding-right: 0;
+    color: lightgrey;
+}
+
+.search::placeholder{
+    background-image: url(../svg-icons/magnifying-glass-solid.svg), url(../svg-icons/cross.svg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    padding-left: 1.5rem;      
+}
+
+.btn-add-team-member{
+    background-image: url(../svg-icons/addition.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    /* padding-left: 2rem; */
+    width: 13rem;
+}
+.main-listing-parent{
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.main-listing{
+    background-color: white; 
+    border-radius: 0.5rem;  
+     padding: 1rem;
+     line-height: 1.5rem;
+     margin-top: 0.5rem;
+     /* list-style: none; */
+     /* list-style-position: inside; */
+}
+
+
+.main-listing {
+    position: relative;
+ }
+
+  .main-listing:nth-child(n+1)::before {
+    content: "";
+    position: absolute;
+    top:1.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid black; 
+    border-radius: 50%; 
+    /* background-color: violet; */
+  }
+
+  .main-listing:nth-child(1)::before{
+    background-color:rgb(224, 66, 224);
+  }
+  .main-listing:nth-child(2)::before{
+    background-color:beige  ;
+  }
+  .main-listing:nth-child(3)::before{
+    background-color: rgb(142, 142, 142);
+  }
+  .main-listing:nth-child(4)::before{
+    background-color:azure;
+  }
+  .main-listing:nth-child(5 )::before{
+    background-color:orange;
+  }
+
+
+.employee,.info{
+    display: flex;
+    justify-content: space-between;
+padding-left: 2rem;
+}
+
+.employee-name{
+    display: flex;
+}
+
+.employee-info{
+    display: flex;
+    align-items: center;   
+}
+
+.employee-details>p{
+    color: grey;
+}
+.employee-info >img, .employee-info >input, .employee-info >span{
+margin: 0.5rem;
+}
+
+.employee-info >span{
+background-color: rgb(185, 232, 236);
+padding: 0.1rem 1rem;
+color: rgb(0, 113, 128);
+border-radius: 50px;
+}
+
+
+.employee-name >span{
+    background-color: rgb(29, 200, 75);
+    color: white;
+    padding: 0.1rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+.info{
+    width: 40rem;
+}
+.info > span{
+   /* margin-right: 2rem; */
+   color: grey;
+}
+
+/* main-footer */
+.main-footer {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    border-top: 1px solid lightgrey;
+    /* background-color: blanchedalmond; */
+}
